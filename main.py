@@ -16,13 +16,15 @@ pg.display.set_caption("Potato Defense")
 enemy_image = pg.image.load("assets/images/enemies/enemy_1.png").convert_alpha()
 
 
-enemy = Enemy((200, 300), enemy_image)
-
 # groups
 enemy_group = pg.sprite.Group()
+
+waypoints = [(100, 100), (400, 200), (400, 100), (200, 300)]
+
+enemy = Enemy((waypoints), enemy_image)
 enemy_group.add(enemy)
 
-print(enemy)
+
 # game loop
 run = True
 while run:
