@@ -13,9 +13,7 @@ screen = pg.display.set_mode((c.SCREEN_WIDTH, c.SCREEN_HEIGHT))
 pg.display.set_caption("Potato Defense")
 
 # load images
-enemy_image = pg.image.load(
-    "main game/assets/images/enemies/enemy_1.png"
-).convert_alpha()
+enemy_image = pg.image.load("assets/images/enemies/enemy_1.png").convert_alpha()
 
 
 enemy = Enemy((200, 300), enemy_image)
